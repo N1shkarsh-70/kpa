@@ -11,6 +11,7 @@ Follow these steps to set up and run the project locally:
 ### 🔧 Environment Setup
 
 1. **Clone or download** the project folder.
+         git clone https://github.com/N1shkarsh-70/kpa.git
 2. **Create and activate a virtual environment**:
    python -m venv menv
    # Windows
