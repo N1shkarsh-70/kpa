@@ -1,0 +1,124 @@
+{
+	"info": {
+		"_postman_id": "bbfb93f0-73ef-4e9e-ad3b-046158536df1",
+		"name": "kpa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44119953",
+		"_collection_link": "https://nishkarsh-7640997.postman.co/workspace/Nishkarsh's-Workspace~aee62732-b651-4e62-85e3-dd84b471b004/collection/44119953-bbfb93f0-73ef-4e9e-ad3b-046158536df1?action=share&source=collection_link&creator=44119953"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/api/forms/wheel-specifications",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"formNumber\": \"WHEEL-2025-001\",\r\n  \"submittedBy\": \"user_id_123\",\r\n  \"submittedDate\": \"2025-07-03\",\r\n  \"fields\": {\r\n    \"treadDiameterNew\": \"915 (900-1000)\",\r\n    \"lastShopIssueSize\": \"837 (800-900)\",\r\n    \"condemningDia\": \"825 (800-900)\",\r\n    \"wheelGauge\": \"1600 (+2,-1)\",\r\n    \"variationSameAxle\": \"0.5\",\r\n    \"variationSameBogie\": \"5\",\r\n    \"variationSameCoach\": \"13\",\r\n    \"wheelProfile\": \"29.4 Flange Thickness\",\r\n    \"intermediateWWP\": \"20 TO 28\",\r\n    \"bearingSeatDiameter\": \"130.043 TO 130.068\",\r\n    \"rollerBearingOuterDia\": \"280 (+0.0/-0.035)\",\r\n    \"rollerBearingBoreDia\": \"130 (+0.0/-0.025)\",\r\n    \"rollerBearingWidth\": \"93 (+0/-0.250)\",\r\n    \"axleBoxHousingBoreDia\": \"280 (+0.030/+0.052)\",\r\n    \"wheelDiscWidth\": \"127 (+4/-0)\"\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/forms/wheel-specifications",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"forms",
+						"wheel-specifications"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/forms/bogie-checksheet",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"formNumber\": \"BOGIE-2025-001\",\r\n  \"inspectionBy\": \"user_id_456\",\r\n  \"inspectionDate\": \"2025-07-03\",\r\n  \"bogieDetails\": {\r\n    \"bogieNo\": \"BG1234\",\r\n    \"makerYearBuilt\": \"RDSO/2018\",\r\n    \"incomingDivAndDate\": \"NR / 2025-06-25\",\r\n    \"deficitComponents\": \"None\",\r\n    \"dateOfIOH\": \"2025-07-01\"\r\n  },\r\n  \"bogieChecksheet\": {\r\n    \"bogieFrameCondition\": \"Good\",\r\n    \"bolster\": \"Good\",\r\n    \"bolsterSuspensionBracket\": \"Cracked\",\r\n    \"lowerSpringSeat\": \"Good\",\r\n    \"axleGuide\": \"Worn\"\r\n  },\r\n  \"bmbcChecksheet\": {\r\n    \"cylinderBody\": \"WORN OUT\",\r\n    \"pistonTrunnion\": \"GOOD\",\r\n    \"adjustingTube\": \"DAMAGED\",\r\n    \"plungerSpring\": \"GOOD\"\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/forms/bogie-checksheet",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"forms",
+						"bogie-checksheet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/forms/wheel-specifications?formNumber=WHEEL-2025-001&submittedBy=user_id_123&submittedDate=2025-07-03",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/forms/wheel-specifications?formNumber=WHEEL-2025-001&submittedBy=user_id_123&submittedDate=2025-07-03",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"forms",
+						"wheel-specifications"
+					],
+					"query": [
+						{
+							"key": "formNumber",
+							"value": "WHEEL-2025-001"
+						},
+						{
+							"key": "submittedBy",
+							"value": "user_id_123"
+						},
+						{
+							"key": "submittedDate",
+							"value": "2025-07-03"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
